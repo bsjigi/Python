@@ -1,0 +1,59 @@
+weather_set= {
+   "weather":{
+      "minutely":[
+         {
+            "sky":{
+               "code":"SKY_A08",
+               "name":"흐리고 비"
+            },
+            "rain":{
+               "sinceOntime":"1.50",
+               "sinceMidnight":"7.00",
+               "last10min":"0.00",
+               "last15min":"0.50",
+               "last30min":"1.00",
+               "last1hour":"2.50",
+               "last6hour":"7.00",
+               "last12hour":"7.00",
+               "last24hour":"7.00"
+            },
+            "temperature":{
+               "tc":"5.70",
+               "tmax":"7.00",
+               "tmin":"2.00"
+            },
+            "humidity":"",
+            "pressure":{
+               "surface":"",
+               "seaLevel":""
+            },
+            "lightning":"0",
+            "timeObservation":"2019-12-01 16:37:00",
+            "station":{
+               "latitude":"36.1366",
+               "longitude":"127.0901",
+               "name":"연무",
+               "id":"644",
+               "type":"KMA"
+            },
+            "wind":{
+               "wdir":"37.40",
+               "wspd":"2.40"
+            },
+            "precipitation":{
+               "sinceOntime":"0.63",
+               "type":"1"
+            }
+         }
+      ]
+   },
+   "common":{
+      "alertYn":"Y",
+      "stormYn":"N"
+   }
+}
+
+print(weather_set['weather']['minutely'][0]['sky']['name'])
+print(weather_set['weather']['minutely'][0]['temperature']['tc'])
+print(weather_set['weather']['minutely'][0]['temperature']['tmax'])
+print(weather_set['weather']['minutely'][0]['temperature']['tmin'])
